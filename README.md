@@ -330,6 +330,17 @@ O site utiliza carregamento adiado de alguns scripts. No fluxo "Fale com um espe
 
 Os seletores foram definidos priorizando elementos semânticos e atributos da aplicação, buscando tornar os testes mais legíveis e estáveis.
 
+## Evidências
+
+As evidências em vídeo da execução dos cenários funcionais estão disponíveis na pasta `evidencias/`.
+
+- `alteracao-idioma.webm` – alteração do idioma de português para inglês;
+- `fale-com-especialista.webm` – validação dos campos obrigatórios do formulário;
+- `nossas-solucoes.webm` – validação das soluções disponíveis;
+- `quem-somos.webm` – validação dos elementos da página Quem Somos.
+
+Os vídeos foram gerados pelo Playwright durante a execução automatizada dos testes.
+
 ## Autor
 
 Natalia Bechuetti
