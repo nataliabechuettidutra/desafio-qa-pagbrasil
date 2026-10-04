@@ -121,6 +121,11 @@ test.describe('Fale com um especialista', () => {
 
     await expect(formulario).toBeVisible();
 
+    // Pausa para visualizar o formulário.
+    if (process.env.DEMO === 'true') {
+      await page.waitForTimeout(2000);
+    }
+
     /*
      * O checkbox real é ocultado visualmente pelo site.
      * O usuário interage com o label correspondente.
@@ -142,6 +147,11 @@ test.describe('Fale com um especialista', () => {
     await labelComunicacoes.click();
 
     await expect(checkbox).toBeChecked();
+
+    // Pausa para visualizar o checkbox selecionado.
+    if (process.env.DEMO === 'true') {
+      await page.waitForTimeout(2000);
+    }
 
     // Continua sem preencher os campos obrigatórios.
     const continuar = formulario.getByRole(
@@ -194,5 +204,10 @@ test.describe('Fale com um especialista', () => {
         '.wpcf7-not-valid-tip'
       )
     ).toHaveText('Campo obrigatório');
+
+    // Pausa para visualizar as mensagens de campos obrigatórios.
+    if (process.env.DEMO === 'true') {
+      await page.waitForTimeout(4000);
+    }
   });
 });
