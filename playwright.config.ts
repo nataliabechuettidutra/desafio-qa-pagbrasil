@@ -17,7 +17,8 @@ export default defineConfig({
   ],
 
   use: {
-    baseURL: 'https://www.google.com',
+    baseURL: 'https://www.pagbrasil.com/pt-br/',
+    locale: 'pt-BR',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
