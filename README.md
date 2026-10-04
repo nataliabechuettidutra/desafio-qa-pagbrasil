@@ -136,6 +136,8 @@ Cenários:
 
 - `fale-com-especialista.feature`
 
+- `requisitos-nao-funcionais.feature`
+
 
 
 ## Testes não funcionais
@@ -188,7 +190,9 @@ desafio-qa-pagbrasil/
 
 │   │   ├── nossas-solucoes.feature
 
-│   │   └── quem-somos.feature
+│   │   ├── quem-somos.feature
+
+│   │   └── requisitos-nao-funcionais.feature
 
 │   ├── casos-de-teste.md
 
